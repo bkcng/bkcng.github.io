@@ -1,0 +1,198 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.3.1.js"></script>
+  <script src="main.js"> </script>
+
+  <title>Bryant Kee Chun Ng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+
+
+<body style="background-color:rgb(225, 229, 233)">
+
+<div class="header"> 
+  <div class="headerColumn">
+    <div class="headerColumnLeft">
+      <h1>Bryant Ng</h1>
+      <div class="tab">  
+          <button data-panelID="Home"  class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</button>
+          <button data-panelID="Work"  class="tablinks" onclick="openPage(event, 'Work')">Experiences</button>
+          <button data-panelID="Projects"  class="tablinks" onclick="openPage(event, 'Projects')">Projects</button>
+          <button data-panelID="History"  class="tablinks" onclick="openPage(event, 'History')">A Little History</button>
+          <button class="tablinks" onclick="openNBA()">NBA</button>
+          <button>Extra Button</button>
+      </div>
+    </div>
+
+    <div class="headerColumnRight">
+      <img src="Images/change1.gif"></img>
+    </div>
+
+  </div>
+</div>
+
+<div id="main" class="main">
+      
+  <!-- Expriences Tab -->
+  <div id="Work" class="tabcontent">
+    <h2><u>Work Experiences</u></h2>
+
+    <div class="workbox">
+      <div class="workboxhead">
+          <img src="irissmall.png">
+          <div class="workboxtitle">
+            <p><b>Software Developer</b></p>
+            <p><i>Iris Power LP</i></p>
+          </div>
+      </div>
+      <div class="workboxhead">
+          <p class="workboxperiod">Jan - Apr 2019</p>
+          <p class="workboxperiod">Mississauga, Ontario</p>
+      </div>
+
+        <li>Scripted a automation application to download, configure and archive </li>
+        <li>Application simulates mouse and keyboard movements to improve efficiency and reduces need for manual operation of software</li>
+        <li>Involved in Software Developement cycle</li>
+    </div>
+    
+    <div class="workbox">
+        <div class="workboxhead">
+            <img src="cibcsmall.jpg">
+            <div class="workboxtitle">
+              <p><b>Incident Management Co-op</b></p>
+              <p><i>Canadian Imperial Bank of Commerce</i></p>
+            </div>
+        </div>
+        <div class="workboxhead">
+            <p class="workboxperiod">May - Aug 2018</p>
+            <p class="workboxperiod">Toronto, Ontario</p>
+        </div>
+
+        <li>Point of contact for incidents impacting users enterprise wide</li>
+        <li>Manage, create and update incident tickets to resolution in ServiceNow</li>
+        <li>Document recovery process for any major incidents</li>
+        <li>Manage service delivery to ensure all customer service level agreements were met</li>
+    </div>
+
+    <div class="workbox">
+        <div class="workboxhead">
+            <img src="RSAFsmall.png">
+            <div class="workboxtitle">
+              <p><b>Operations & Human Resource Clerk</b></p>
+              <p><i>Republic of Singapore Air Force</i></p>
+            </div>
+        </div>
+        <div class="workboxhead">
+            <p class="workboxperiod">Dec 2015 - Sep 2017</p>
+            <p class="workboxperiod">Singapore</p>
+        </div>
+
+        <li>Used Excel macros and tools to update manpower movement, requirements and monthly reports</li>
+        <li>Ensure accurate dispersal and retrieval of information with various agencies and units</li>
+        <li>Assist in coordination or local/overseas exercises</li>
+        <li>Facilitated and supported key events in adminstration and logistics</li>
+    </div>
+
+  </div>
+
+
+  <!-- Home tab -->
+  <div id="Home" class="tabcontent">
+    <h2><u>About</u></h2>
+      <p>Hi there, my name is Bryant, nice to meet you.</p>
+    <h3>Program of Study:</h3>
+      <li>2B <b>Electrical Engineering</b> at the University of Waterloo</li>
+    <h3>Currently:</h3>
+      <li>Looking for a position from September - December 2019</li>
+      <li>Building upon knowledge and experience with Embedded systems and IoT</li>
+      <li>Applying and learning new and upcoming Web and Mobile development technologies</li>
+    
+    <h3>Recent Experiences:</h3>
+      <li><i>Software Developer</i> at Iris Power LP</li>
+      <li><i>Incident Management Co-op</i> at Canadian Imperial Bank of Commerce</li>
+    
+    <h3>Skills:</h3>
+        <p><i>Technical Skills</i></p>
+        <li>C++, C#, VBA, Microsoft Office</li>
+        <li>HTML, CSS, JavaScript, jQuery</li>
+        <li>ARM Assembly and VHDL lower level programming</li>
+        <li>Solve and build analog, digital circuits</li>
+        <li>Experience using analytic tools and test instruments (Function Generators, Oscilloscopes)</li>
+
+        <p><i>Personal Attributes</i></p>
+        <li>Strong analytical skills</li>
+        <li>Being a team player and leader</li>
+        <li>Detail oriented with assigned tasks</li>
+        <li>Willing to learn and adjusts to different environments easily</li>
+      
+      <h3>Interests:</h3>
+      <li>Competitive Badminton</li>
+      <li>Fantasy Basketball</li>
+      <li>Travelling and going on adventures</li>
+  </div>
+
+  <!-- Projects Tab -->
+  <div id="Projects" class="tabcontent">
+    <div class="workbox">
+      <h3>Bench Press Gloves</h3>
+      <p>UofT Makeathon - Feb 2019</p>
+      <li>Goal was to enhance the workout experience for the user</li>
+      <li>Used gyroscopes to detect any inbalance in the position of the gloves</li>
+      <li>Made use of an Arduino to record and display data to console</li>
+      <li>LEDs light up and alerts user of any inbalance between the 2 gloves</li>
+      <p>Challenges: Had difficulty parsing and displaying meaningful data from the arduino to phone</p>
+      <p>Other technologies used: React Native to develop a phone application to display data for user</p>
+    </div>
+  </div>
+
+  <!-- Early life tab -->
+  <div id="History" class="tabcontent">
+      <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img_snow_wide.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="sg.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img_mountains_wide.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          
+    </div>  
+      
+
+  </div>
+
+</div>
+
+</body>
+</html>
