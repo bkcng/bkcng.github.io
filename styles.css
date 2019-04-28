@@ -1,9 +1,9 @@
 body {
   font-family: Comic Sans MS, Arial, Georgia, "Times New Roman", Times, serif,
     "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 * {
@@ -11,27 +11,25 @@ body {
 }
 
 .header {
-  font-family: "Tisa Sans";
+  font-family: "Georgia";
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 
 .headerColumn1 {
   display: flex;
-  flex-direction: row;
-  padding-right: 30px;
-}
-
-.headerColumn2 {
-  /* align-content:flex-end; */
-  display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: left;
+  justify-content: left;
+  padding-right: 70px;
 }
 
 .tab {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  height: min-content;
+  vertical-align: middle;
 }
 
 /* Style the buttons inside the tab */
@@ -41,25 +39,24 @@ body {
   padding: 10px;
   transition: 0.7s;
   font-size: 14px;
-  color: white;
-  background-color: rgb(103, 105, 112);
-  opacity: 0.4;
+  color: black;
+  opacity: 1;
   border: none;
   text-decoration: underline;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: rgb(63, 137, 180);
   color: black;
   opacity: 0.8;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: rgb(103, 105, 112);
+  background-color: rgb(63, 137, 180);
   opacity: 0.8;
-  color: white;
+  color: black;
 }
 
 .tabcontent {
@@ -72,6 +69,9 @@ body {
 .main {
   margin-top: 40px;
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(225, 229, 233);
   font-size: 16px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
