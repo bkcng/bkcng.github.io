@@ -226,3 +226,10 @@ img {
     font-size: 11px;
   }
 }
+
+.ContactInfo {
+  align-items: left;
+  justify-items: left;
+  display: flex;
+  flex-direction: column;
+}
