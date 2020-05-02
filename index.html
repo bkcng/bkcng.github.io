@@ -27,7 +27,7 @@
       <button data-panelID="Work"  class="tablinks" onclick="openPage(event, 'Work')">Experiences</button>
       <button data-panelID="Projects"  class="tablinks" onclick="openPage(event, 'Projects')">Projects</button>
       <button data-panelID="Contact"  class="tablinks" onclick="openPage(event, 'Contact')">Contact</button>
-      <!-- <button class="tablinks" onclick="openNBA()">NBA</button> -->
+      <button class="tablinks" onclick="openNBA()">NBA</button>
     </div>
 
 </div>
@@ -40,9 +40,29 @@
 
     <div class="workbox">
       <div class="workboxhead">
-        <img src="irissmall.png">
+        <img src="">
         <div class="workboxtitle">
           <p><b>Software Developer</b></p>
+          <p><i>Virtek Vision International ULC</i></p>
+        </div>
+      </div>
+      <div class="workboxhead">
+        <p class="workboxperiod">Sep - Present 2019</p>
+        <p class="workboxperiod">Waterloo, Ontario</p>
+      </div>
+
+      <li>Part of team developing the Projection Data Creator (PDC), a WPF app that visualizes 3D models from AutoCAD files</li>
+      <li>Increased range by 40% of readable file formats for PDC through upgrading 3rd party APIs</li>
+      <li>Resolved defects and stories involving infrastructure, backend functionality and UI to improve customer experience</li>
+      <li>Implemented a C++ test driver within the build pipeline to establish a benchmark for tracking performance metrics</li>
+      <li>The test driver automated testing procedures for reading file types and was able to reduce testing time by 50%</li>
+    </div>
+
+    <div class="workbox">
+      <div class="workboxhead">
+        <img src="irissmall.png">
+        <div class="workboxtitle">
+          <p><b>Software Developer Assistant</b></p>
           <p><i>Iris Power LP</i></p>
         </div>
       </div>
@@ -51,10 +71,10 @@
         <p class="workboxperiod">Mississauga, Ontario</p>
       </div>
 
-      <li>Designed a scripting tool to simulate keyboard and mouse movements to download and update files on application interface</li>
-      <li>Script improves efficiency and reduces manual intervention in the field</li>
-      <li>Built prototype application features and tests on .NET framework using C#, XAML</li>
-      <li>Desgined a test application to verify that binary data can be converted to readable data</li>
+      <li>Designed a Barcode Scanner feature for a WPF application to improve accuracy rates for storing information of new products in the data pipeline</li>
+      <li>Scripted a PyAutoGUI tool to replicate download processes within internal application interface</li>
+      <li>Tool reduces onsite visits by 50-80% for field specialists and allow clients to access updated data remotely </li>
+      <li>Set up test suites to eliminate application bugs and documented the results as metrics</li>
     </div>
     
     <div class="workbox">
@@ -75,26 +95,6 @@
         <li>Document recovery process for any major incidents</li>
         <li>Manage service delivery to ensure all customer service level agreements were met</li>
     </div>
-
-    <div class="workbox">
-        <div class="workboxhead">
-            <img src="RSAFsmall.png">
-            <div class="workboxtitle">
-              <p><b>Operations & Human Resource Clerk</b></p>
-              <p><i>Republic of Singapore Air Force</i></p>
-            </div>
-        </div>
-        <div class="workboxhead">
-            <p class="workboxperiod">Dec 2015 - Sep 2017</p>
-            <p class="workboxperiod">Singapore</p>
-        </div>
-
-        <li>Used Excel macros and tools to update manpower movement, requirements and monthly reports</li>
-        <li>Ensure accurate dispersal and retrieval of information with various agencies and units</li>
-        <li>Assist in coordination or local/overseas exercises</li>
-        <li>Facilitated and supported key events in adminstration and logistics</li>
-    </div>
-
   </div>
 
 
@@ -103,14 +103,16 @@
     <h2><u>About</u></h2>
     <p>A little information about me!</p>
     <h3>Program of Study:</h3>
-      <li>2B <b>Electrical Engineering</b> at the University of Waterloo</li>
+      <li>3B <b>Electrical Engineering in Fall 2020</b> at the University of Waterloo</li>
     <h3>Currently:</h3>
-      <li>Looking for a position from September - December 2019</li>
-      <li>Building upon knowledge and experience with Embedded systems and IoT</li>
-      <li>Applying and learning new and upcoming Web and Application development technologies</li>
+      <li>Incoming Electrical Design Intern at Zeton Inc for Summer 2020</li>
+      <li>Looking for a internship position from January - April 2021</li>
+      <li>Open to learning and absorbing knowledge in Electrical Design, Schematic CAD Design and Power Systems</li>
+      <li>Also maintaining and improving skills in Software Development and especially Web Development</li>
     
     <h3>Recent Experiences:</h3>
-      <li><i>Software Developer</i> at Iris Power LP</li>
+      <li><i>Software Developer</i> at Virtek Vision International ULC</li>
+      <li><i>Software Developer Assistant</i> at Iris Power LP</li>
       <li><i>Incident Management Co-op</i> at Canadian Imperial Bank of Commerce</li>
     
     <!-- <h3>Skills:</h3>
@@ -135,6 +137,15 @@
   <!-- Projects Tab -->
   <div id="Projects" class="tabcontent">
     <div class="workbox">
+      <h3>Greenhouse Simulator</h3>
+      <p>ECE 298 - Instrument & Prototyping Lab</p>
+      <li>Built a greenhouse simulator using a TI MSP430 board, C programming with temperature and moisture sensors to simulate different greenhouse environments</li>
+      <li>Utilized the ADC module to read analog output values from sensors and convert them digitally to display</li>
+      <li>‘Greenhouse’ will have various LED signal patterns for abnormal readings in moisture and temperature</li>
+      <li>Triggers also include a motor fan powered by a PWM to reduce temperature and buzzer for audio alert</li>
+    </div>
+
+    <div class="workbox">
       <h3>Bench Press Gloves</h3>
       <p>UofT Makeathon - Feb 2019</p>
       <li>Goal was to enhance the workout experience for the user</li>
@@ -142,9 +153,10 @@
       <li>Made use of an Arduino to record and display data to console</li>
       <li>LEDs light up and alerts user of any inbalance between the 2 gloves</li>
       <p>Challenges: Had difficulty parsing and displaying meaningful data from the Arduino to phone</p>
-      <p>Other technologies used: React Native to develop a phone application to display data for user</p>
+      <p>Other technologies used: React-Native to develop a phone application to display data for user</p>
     </div>
   </div>
+
 
   <!-- Contact Tab -->
   <div id="Contact" class="tabcontent">
